@@ -15,7 +15,7 @@ export class loginElements{
                 return cy.get('div[id="logInModal"] button').eq(1)
             },
             get login(){
-                return cy.contains('button', 'Log in').click()
+                return cy.contains('button', 'Log in')
             }
         }
     }

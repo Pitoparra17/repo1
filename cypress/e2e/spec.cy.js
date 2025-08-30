@@ -10,7 +10,7 @@ describe('template spec', () => {
     cy.get('a[data-target="#logInModal"]').click()
 
     loginMethods.login(usuario,contrasena)
-    //cy.contains('button', 'Log in').click()
+  
     cy.get('a#nameofuser').should('contain.text',usuario)
     cy.wait(5000)
   })
