@@ -8,6 +8,7 @@ describe('template spec', () => {
     cy.get('a[data-target="#logInModal"]').click()
 
     loginMethods.login('userName','password')
+    
     cy.wait(5000)
   })
 })
